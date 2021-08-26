@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+  <main class="container">
+    <div class="container__bgi--top"></div>
+    
+    <header class="container__header">
+      <figure class="header__picture">
+        <img src="img/logo.svg" alt="logo photo" class="header__img">
+      </figure>
+    </header>
+    <picture class="container__picture">
+      <source media="(max-width:1180px)" srcset="img/hero-mobile.jpg">
+      <source media="(max-width:1440px)" srcset="img/hero-desktop.jpg">
+      <img src="img/hero-desktop.jpg" alt="hero container" class="container__img">
+    </picture>
+    <article class="container__article">
+      <h1 class="container__article--heading">
+        We're <br>
+        <strong class="container__article--bold">coming <br> soon</strong>
+      </h1>
+      <p class="container__article--paragraph">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form action="" class="container__article--form">
+        <div class="container__article--input emailBox">
+          <input type="email" placeholder="Email Address" id="email" class="input__article">
+          <span class="emailText"></span>
+          <div class="container__article--picture">          
+          </div>
+        </div>
+        <div class="container__article--button">
+          <button class="container__article--btn">
+            <img class="container__article--arrow" src="img/icon-arrow.svg" alt="">
+          </button>
+        </div>
+      </form>
+    </article>
+    <div class="container__footer">
+      <p class="attribution">
+        Challenge by <a class="attribution--link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a class="attribution--link" href="#" target="_blank">Luis Selva</a>.
+      </p>
+    </div>
+  </main>
+  <script src="js/validate.js"></script>
+</body>
+</html>
